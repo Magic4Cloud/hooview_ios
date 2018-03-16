@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WaterfallsCell" id="4xF-GR-cQ6" customClass="MyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="291"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="291"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K98-aP-JVM">
+                        <rect key="frame" x="0.0" y="112" width="138" height="179"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11月房企密集抛售560亿资产 多数处高负债或亏损状态" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uD-3b-x8P">
+                                <rect key="frame" x="6" y="25" width="126" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在分析人士看来，年底房企频频出售房地产资产，一方面是迫于房地产调控的压力，减压减负、回笼资金。另一方面则是通过剥离不良资产，实现资产结构和投资布局的优化。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYB-4N-eD6">
+                                <rect key="frame" x="6" y="106.5" width="126" height="167.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TYB-4N-eD6" firstAttribute="leading" secondItem="K98-aP-JVM" secondAttribute="leading" constant="6" id="6Uh-qf-ziW"/>
+                            <constraint firstItem="3uD-3b-x8P" firstAttribute="leading" secondItem="K98-aP-JVM" secondAttribute="leading" constant="6" id="EDQ-bA-HQT"/>
+                            <constraint firstAttribute="trailing" secondItem="3uD-3b-x8P" secondAttribute="trailing" constant="6" id="TWE-2C-FR7"/>
+                            <constraint firstItem="3uD-3b-x8P" firstAttribute="top" secondItem="K98-aP-JVM" secondAttribute="top" constant="25" id="VFx-0z-OPt"/>
+                            <constraint firstItem="TYB-4N-eD6" firstAttribute="top" secondItem="3uD-3b-x8P" secondAttribute="bottom" constant="5" id="br2-M8-zI0"/>
+                            <constraint firstAttribute="trailing" secondItem="TYB-4N-eD6" secondAttribute="trailing" constant="6" id="jGP-kz-Pv1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QQB-6c-jk2">
+                        <rect key="frame" x="0.0" y="35" width="138" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="bED-xU-AIK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo_ colour" translatesAutoresizingMaskIntoConstraints="NO" id="OzY-bL-uxe">
+                        <rect key="frame" x="45.5" y="18" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="Mxz-sg-SAW"/>
+                            <constraint firstAttribute="height" constant="48" id="gRb-wV-N2m"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火眼金睛" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-El-tjT">
+                        <rect key="frame" x="5" y="69" width="128" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火眼让赚钱变得更简单" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NES-oD-Gis">
+                        <rect key="frame" x="1" y="91" width="136" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="K98-aP-JVM" secondAttribute="bottom" id="3u2-j6-e0t"/>
+                <constraint firstItem="NES-oD-Gis" firstAttribute="top" secondItem="cMg-El-tjT" secondAttribute="bottom" constant="1" id="4AM-Y1-shR"/>
+                <constraint firstItem="cMg-El-tjT" firstAttribute="centerX" secondItem="4xF-GR-cQ6" secondAttribute="centerX" id="4UJ-Lp-FMO"/>
+                <constraint firstItem="NES-oD-Gis" firstAttribute="leading" secondItem="4xF-GR-cQ6" secondAttribute="leading" constant="1" id="9dp-Rb-Ohl"/>
+                <constraint firstAttribute="trailing" secondItem="QQB-6c-jk2" secondAttribute="trailing" id="ARd-cb-WrP"/>
+                <constraint firstAttribute="trailing" secondItem="cMg-El-tjT" secondAttribute="trailing" constant="5" id="D7Z-g7-Ksu"/>
+                <constraint firstItem="QQB-6c-jk2" firstAttribute="top" secondItem="4xF-GR-cQ6" secondAttribute="top" constant="35" id="Dbs-uY-JUL"/>
+                <constraint firstItem="cMg-El-tjT" firstAttribute="top" secondItem="OzY-bL-uxe" secondAttribute="bottom" constant="3" id="EPd-Jg-Vs6"/>
+                <constraint firstAttribute="trailing" secondItem="NES-oD-Gis" secondAttribute="trailing" constant="1" id="KyN-cS-3EH"/>
+                <constraint firstItem="OzY-bL-uxe" firstAttribute="top" secondItem="4xF-GR-cQ6" secondAttribute="top" constant="18" id="MOP-Ht-6GD"/>
+                <constraint firstItem="OzY-bL-uxe" firstAttribute="centerX" secondItem="4xF-GR-cQ6" secondAttribute="centerX" id="NJA-zG-0rN"/>
+                <constraint firstItem="K98-aP-JVM" firstAttribute="leading" secondItem="4xF-GR-cQ6" secondAttribute="leading" id="WNQ-e2-SDA"/>
+                <constraint firstItem="NES-oD-Gis" firstAttribute="centerX" secondItem="4xF-GR-cQ6" secondAttribute="centerX" id="sgZ-pv-ChM"/>
+                <constraint firstItem="K98-aP-JVM" firstAttribute="top" secondItem="4xF-GR-cQ6" secondAttribute="top" constant="112" id="utC-7j-D30"/>
+                <constraint firstItem="QQB-6c-jk2" firstAttribute="leading" secondItem="4xF-GR-cQ6" secondAttribute="leading" id="vCC-hH-BID"/>
+                <constraint firstItem="cMg-El-tjT" firstAttribute="leading" secondItem="4xF-GR-cQ6" secondAttribute="leading" constant="5" id="vfx-Cr-E78"/>
+                <constraint firstAttribute="trailing" secondItem="K98-aP-JVM" secondAttribute="trailing" id="yFe-Gz-zuh"/>
+            </constraints>
+            <size key="customSize" width="138" height="291"/>
+            <connections>
+                <outlet property="contentLab" destination="TYB-4N-eD6" id="4Ib-p8-P4H"/>
+                <outlet property="headerImg" destination="OzY-bL-uxe" id="FOS-5x-q6h"/>
+                <outlet property="image" destination="QQB-6c-jk2" id="XZs-tD-QRp"/>
+                <outlet property="nameLab" destination="cMg-El-tjT" id="vML-Ly-mlC"/>
+                <outlet property="titleLab" destination="3uD-3b-x8P" id="XMY-yj-PRb"/>
+                <outlet property="titleLabel" destination="NES-oD-Gis" id="gWE-6o-TRe"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="91.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_logo_ colour" width="23" height="23"/>
+    </resources>
+</document>

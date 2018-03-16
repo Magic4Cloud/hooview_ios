@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYCJForgetAViewController">
+            <connections>
+                <outlet property="phoneTF" destination="KDI-c7-oC1" id="a4N-pv-zrE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入注册手机号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yN9-og-kQF">
+                    <rect key="frame" x="30" y="36" width="131" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="QX2-2t-c7l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR7-AQ-iAV">
+                    <rect key="frame" x="30" y="247.5" width="315" height="48"/>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="91A-Mh-46y"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextButtonAction:" destination="-1" eventType="touchUpInside" id="eRp-57-gfz"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFB-Il-w1H">
+                    <rect key="frame" x="30" y="84.5" width="315" height="48"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KDI-c7-oC1">
+                            <rect key="frame" x="50" y="0.0" width="253" height="48"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_input_phone" translatesAutoresizingMaskIntoConstraints="NO" id="nnP-ib-Uxc">
+                            <rect key="frame" x="10" y="12.5" width="23" height="23"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KDI-c7-oC1" secondAttribute="bottom" id="A4v-0P-KZJ"/>
+                        <constraint firstItem="nnP-ib-Uxc" firstAttribute="centerY" secondItem="KDI-c7-oC1" secondAttribute="centerY" id="FIg-N3-yRD"/>
+                        <constraint firstItem="KDI-c7-oC1" firstAttribute="top" secondItem="NFB-Il-w1H" secondAttribute="top" id="LpI-04-pUe"/>
+                        <constraint firstItem="nnP-ib-Uxc" firstAttribute="leading" secondItem="NFB-Il-w1H" secondAttribute="leading" constant="10" id="Nh0-WA-DdV"/>
+                        <constraint firstItem="KDI-c7-oC1" firstAttribute="leading" secondItem="NFB-Il-w1H" secondAttribute="leading" constant="50" id="PmY-EQ-fjF"/>
+                        <constraint firstAttribute="trailing" secondItem="KDI-c7-oC1" secondAttribute="trailing" constant="12" id="TQz-93-gXA"/>
+                        <constraint firstAttribute="height" constant="48" id="pnf-40-pjd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VR7-AQ-iAV" firstAttribute="top" secondItem="NFB-Il-w1H" secondAttribute="bottom" constant="115" id="0uD-qG-voa"/>
+                <constraint firstItem="NFB-Il-w1H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="MYJ-oa-wjF"/>
+                <constraint firstItem="NFB-Il-w1H" firstAttribute="top" secondItem="yN9-og-kQF" secondAttribute="bottom" constant="27.5" id="MhN-c6-7Mp"/>
+                <constraint firstAttribute="trailing" secondItem="VR7-AQ-iAV" secondAttribute="trailing" constant="30" id="cZe-fK-9yX"/>
+                <constraint firstItem="yN9-og-kQF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="cdu-zo-2ev"/>
+                <constraint firstAttribute="trailing" secondItem="NFB-Il-w1H" secondAttribute="trailing" constant="30" id="kyY-uy-Lrc"/>
+                <constraint firstItem="yN9-og-kQF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="36" id="lAF-VJ-Fvm"/>
+                <constraint firstItem="VR7-AQ-iAV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="lUq-JW-GuB"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_input_phone" width="23" height="23"/>
+    </resources>
+</document>

@@ -1,0 +1,14 @@
+//
+//  zhaoYi.pch
+//  CerebralHemorrhageBBS
+//
+//  Created by 黄帆 on 17/3/21.
+//  Copyright © 2017年 黄帆. All rights reserved.
+//
+
+#ifndef zhaoYi_pch
+#define zhaoYi_pch
+
+#import <HyphenateLite/HyphenateLite.h>
+#import "EaseUI.h"
+#endif /* zhaoYi_pch */

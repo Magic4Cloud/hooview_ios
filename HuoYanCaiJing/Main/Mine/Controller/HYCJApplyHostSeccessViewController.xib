@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYCJApplyHostSeccessViewController">
+            <connections>
+                <outlet property="backButtonHeight" destination="KcP-3k-oaY" id="Vvs-o8-Z3b"/>
+                <outlet property="backHomeButton" destination="sh8-Df-8Le" id="jWt-x4-0FS"/>
+                <outlet property="imageH" destination="ldH-vs-NMr" id="nOa-ce-ZLQ"/>
+                <outlet property="imageHeght" destination="B9U-DX-2TI" id="TLP-gI-M7A"/>
+                <outlet property="imageW" destination="pE7-ex-iwa" id="AyK-Ap-riC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_status_submit_ok" translatesAutoresizingMaskIntoConstraints="NO" id="plA-2d-i7Q">
+                    <rect key="frame" x="142.5" y="134" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="ldH-vs-NMr"/>
+                        <constraint firstAttribute="width" constant="90" id="pE7-ex-iwa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请信息已经提交成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6G-eP-RlE">
+                    <rect key="frame" x="90.5" y="238" width="194" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.91764705879999997" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火眼金睛工作人员将在24小时内与你联系" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D99-Ni-fPD">
+                    <rect key="frame" x="57.5" y="265" width="260" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh8-Df-8Le">
+                    <rect key="frame" x="142.5" y="417" width="90" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="67k-FJ-Enn"/>
+                        <constraint firstAttribute="width" constant="90" id="Lww-Z9-iTu"/>
+                    </constraints>
+                    <state key="normal" title="返回首页">
+                        <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backHomeButtonAction:" destination="-1" eventType="touchUpInside" id="tyd-wh-Srz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="plA-2d-i7Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="134" id="B9U-DX-2TI"/>
+                <constraint firstItem="s6G-eP-RlE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BCp-cc-Ajh"/>
+                <constraint firstItem="sh8-Df-8Le" firstAttribute="top" secondItem="D99-Ni-fPD" secondAttribute="bottom" constant="135" id="KcP-3k-oaY"/>
+                <constraint firstItem="sh8-Df-8Le" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RMb-lA-wwn"/>
+                <constraint firstItem="s6G-eP-RlE" firstAttribute="top" secondItem="plA-2d-i7Q" secondAttribute="bottom" constant="14" id="dHE-VE-vS7"/>
+                <constraint firstItem="D99-Ni-fPD" firstAttribute="top" secondItem="s6G-eP-RlE" secondAttribute="bottom" constant="4" id="kQl-pp-igi"/>
+                <constraint firstItem="D99-Ni-fPD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qv8-CH-bGl"/>
+                <constraint firstItem="plA-2d-i7Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yVD-Jw-2Uy"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_status_submit_ok" width="91" height="91"/>
+    </resources>
+</document>

@@ -1,0 +1,24 @@
+//
+//  HYCJ.pch
+//  HuoYanCaiJing
+//
+//  Created by ZPF Mac Pro on 2018/1/7.
+//  Copyright © 2018年 shilei. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#ifndef HYCJ_pch
+#define HYCJ_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//
+//
+#import "Header.h"
+#import "Configure.h"
+#import "zhaoYi.pch"
+
+#endif /* HYCJ_pch */
+
+#endif
